@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101016"><meta name="description" content="Про100Код — ЕГЭ по информатике. Практика с проверкой ответов, понятная теория и короткие тренировки.">
+<title>Про100Код — ЕГЭ по информатике</title>
+<script>
+(function(){var theme;try{theme=localStorage.getItem('pro100code-theme')}catch(e){}if(theme!=='light'&&theme!=='dark')theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=theme;document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#101016':'#f7f7fc';try{if(localStorage.getItem('pro100code-motion')==='off')document.documentElement.classList.add('motion-paused')}catch(e){}})();
+</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="editorial.css"><link rel="stylesheet" href="learning.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+<a class="brand" href="#home" aria-label="Про100Код — главная"><span class="brand-name">про<span>100</span>код</span><span class="brand-mark" aria-hidden="true">↗</span></a>
+<nav aria-label="Основная навигация"><a href="#practice" data-nav="practice">Практика</a><a href="#theory" data-nav="theory">Теория</a><a href="#training" data-nav="training">Тренировка</a><a href="#errors" data-nav="errors">Работа над ошибками</a></nav>
+<div class="header-actions">
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Тёмная тема" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg></button>
+<button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="true" aria-label="Анимация включена. Выключить"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></button>
+<a class="progress-nav" href="#progress" data-nav="progress">Мой прогресс <span aria-hidden="true">↗</span></a>
+</div>
+</header><div class="sync-line"><span data-sync-status role="status">Подключаем прогресс…</span><a id="account-signin" href="/signin-with-chatgpt?return_to=/" target="_top" hidden>Войти для синхронизации</a></div>
+<div class="workspace"><div class="topbar" hidden><strong id="crumb">Главная</strong></div><main id="main" tabindex="-1"></main>
+<footer><a class="brand" href="#home">про<span>100</span>код</a><span>Каждая решённая задача — шаг вперёд.</span><a href="https://fipi.ru/ege/demoversii-specifikacii-kodifikatory" target="_blank" rel="noopener">Материалы ФИПИ ↗</a></footer>
+</div>
+<dialog id="finish-dialog" class="finish-dialog" aria-labelledby="confirm-title"><h2 id="confirm-title">Завершить тренировку?</h2><p id="confirm-text"></p><div><button type="button" class="button secondary" data-cancel-finish>Продолжить</button><button type="button" class="button" data-confirm-finish>Завершить</button></div></dialog><div id="toast" role="status"></div>
+<script src="app.js" type="module"></script><script src="theme.js" defer></script>
+</body></html>
